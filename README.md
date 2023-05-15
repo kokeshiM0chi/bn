@@ -32,6 +32,12 @@ extern crate bn;
 
 ### Examples
 
+```
+cargo run --example joux
+```
+
+
+
 #### Joux's key agreement protocol
 
 In a typical Diffie-Hellman key exchange, relying on ECDLP, a three-party key exchange requires two rounds. A single round protocol is possible through the use of a bilinear pairing: given Alice's public key *a*P<sub>1</sub> and Bob's public key *b*P<sub>2</sub>, Carol can compute the shared secret with her private key *c* by *e*(*a*P<sub>1</sub>, *b*P<sub>2</sub>)<sup>c</sup>.

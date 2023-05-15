@@ -20,5 +20,10 @@ fn main() {
     let bob_ss = pairing(carol_pk1, alice_pk2).pow(bob_sk);
     let carol_ss = pairing(alice_pk1, bob_pk2).pow(carol_sk);
 
+
+    println!("alice_ss = {:?}",alice_ss );
+    println!("bob_ss = {:?}",bob_ss );
+    println!("carol_ss = {:?}",carol_ss );
+
     assert!(alice_ss == bob_ss && bob_ss == carol_ss);
 }
